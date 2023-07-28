@@ -8,14 +8,14 @@ jobs:
 
     steps:    
       - uses: actions/checkout@v3
-      - name: GET PYTHON VERSION      
+      - name: VERSÂO PYTHON      
         run:  python3 --version
-      - name: INSTALL REQUIREMENTS
+      - name: INSTALAR
         run:  pip install -r requirements.txt     
-      - name: PYTHON TESTE
-        run: python -m pytest app.py    
-      # - name: LIST DOTNET
-      #   run: dotnet --list-sdks
+      - name:  INSTALL PYTHON TESTE
+        run: pip install pytest   
+      - name: TESTANDO APP
+        run: python -m pytest app.py
       # - name: LIST RUNTIME
       #   run: dotnet --list-runtimes
       # - name: BUILD TEST
