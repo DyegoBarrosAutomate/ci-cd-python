@@ -1,0 +1,30 @@
+on:
+ push:
+   branches: ["main"]
+      
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+
+    steps:    
+      - uses: actions/checkout@v3
+      - name: GET PYTHON VERSION      
+        run:  python3 --version
+      - name: INSTALL REQUIREMENTS
+        run:  pip install -r requirements.txt     
+      - name: PYTHON TESTE
+        run: python3 -m putest app.py    
+      # - name: LIST DOTNET
+      #   run: dotnet --list-sdks
+      # - name: LIST RUNTIME
+      #   run: dotnet --list-runtimes
+      # - name: BUILD TEST
+      #   run: dotnet build
+      # - name: TEST .NET
+      #   run: dotnet test
+      # - name: PIPELINE SUCCESS
+      #   run: echo "PIPELINE SUCCESSFULLY!"
+
+  
+
+      
