@@ -16,8 +16,8 @@ jobs:
         run: pip install pytest   
       - name: TESTANDO APP
         run: python -m pytest app.py
-      # - name: LIST RUNTIME
-      #   run: dotnet --list-runtimes
+      - name: TESTE CONCLUIDO
+        run: echo "Sucesso so concluir teste"
       # - name: BUILD TEST
       #   run: dotnet build
       # - name: TEST .NET
