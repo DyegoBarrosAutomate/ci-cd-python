@@ -15,7 +15,7 @@ jobs:
       - name:  INSTALL PYTHON TESTE
         run: pip install pytest   
       - name: TESTANDO APP
-        run: python -m pytest app.py
+        run: python -m pytest 
       - name: TESTE CONCLUIDO
         run: echo "Sucesso so concluir teste"
       # - name: BUILD TEST
