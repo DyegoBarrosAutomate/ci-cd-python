@@ -13,7 +13,7 @@ jobs:
       - name: INSTALL REQUIREMENTS
         run:  pip install -r requirements.txt     
       - name: PYTHON TESTE
-        run: python3 -m putest app.py    
+        run: python3 -m pytest app.py    
       # - name: LIST DOTNET
       #   run: dotnet --list-sdks
       # - name: LIST RUNTIME
