@@ -13,7 +13,7 @@ jobs:
         server: ftps.154.56.41.29
         username: root
         password: '@Automate2023#'
-        server-dir: /root
+        server-dir: root/
 
   
 
