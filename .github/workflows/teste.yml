@@ -10,10 +10,10 @@ jobs:
     - name: Upload Automático
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.154.56.41.29
+        server: ftps.154.56.41.29
         username: root
         password: '@Automate2023#'
-        destination-path: ~/root
+        server-dir: /root
 
   
 
