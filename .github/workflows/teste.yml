@@ -7,23 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
-      - uses: actions/checkout@v3
-      - name: VERSÂO PYTHON      
-        run:  python3 --version
-      - name: INSTALAR
-        run:  pip install -r requirements.txt     
-      - name:  INSTALL PYTHON TESTE
-        run: pip install pytest   
-      - name: TESTANDO APP
-        run: python -m pytest 
-      - name: TESTE CONCLUIDO
-        run: echo "Sucesso so concluir teste"
-      # - name: BUILD TEST
-      #   run: dotnet build
-      # - name: TEST .NET
-      #   run: dotnet test
-      # - name: PIPELINE SUCCESS
-      #   run: echo "PIPELINE SUCCESSFULLY!"
+    - name: Upload Automático
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: sftp.154.56.41.29
+        username: root
+        password: '@Automate2023#'
+        destination-path: /root
+
+  
+
+      
+     
 
   
 
