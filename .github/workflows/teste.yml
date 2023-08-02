@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
-    - name: Upload Automático
+    - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.HOST_FTP }}
-        username: ${{ secrets.USER_FTP }}
+        server: ftp.154.56.41.29
+        username: root
         password: ${{ secrets.PASSWORD_FTP }}
         
 
