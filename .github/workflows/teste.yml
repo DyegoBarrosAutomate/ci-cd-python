@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
-    - name: 📂 UPLOAD FILES
+    - name: 📂FILES
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.HOST_FTP }}
