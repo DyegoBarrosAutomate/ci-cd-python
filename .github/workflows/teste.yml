@@ -10,8 +10,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.154.56.41.29
-        username:  ${{ USER_FTP }}
+        server: ${{ secrets.HOST_FTP }}
+        username:  ${{ secrets.USER_FTP }}
         password: ${{ secrets.PASSWORD_FTP }}
         
 
