@@ -13,8 +13,7 @@ jobs:
         server: ${{ secrets.HOST_FTP }}
         username: ${{ secrets.USER_FTP }}
         password: ${{ secrets.PASSWORD_FTP }}
-        sftpArgs: '-o ConnectTimeout=5'
-        remote_path: '/root'
+        
 
   
 
