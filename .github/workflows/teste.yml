@@ -18,7 +18,7 @@ jobs:
         sftp_only: true  
         local_path: './*'
         remote_path: '/root/ftp/'
-        sftpArgs: '-o ConnectTimeout=20'
+        sftpArgs: '-o ConnectTimeout=60'
        
        
         
