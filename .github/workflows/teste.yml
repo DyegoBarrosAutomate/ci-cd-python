@@ -8,12 +8,15 @@ jobs:
 
     steps:    
     - name: 📂FILES
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         server: ${{ secrets.HOST_FTP }}
         username:  ${{ secrets.USER_FTP }}
         password: ${{ secrets.PASSWORD_FTP }}
-        sftp_only: true
+        ssh_private_key: ${{ secrets.SSH_KEY }}
+        sftp_only: true        
+        remote_path: '/root'
+        sftpArgs: '-o ConnectTimeout=20'
        
         
 
