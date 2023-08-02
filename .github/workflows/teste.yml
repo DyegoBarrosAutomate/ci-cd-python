@@ -14,9 +14,10 @@ jobs:
         username:  ${{ secrets.USER_FTP }}
         password: ${{ secrets.PASSWORD_FTP }}
         ssh_private_key: ${{ secrets.SSH_KEY }}
-        sftp_only: true        
-        remote_path: '/root'
+        sftp_only: true  
         sftpArgs: '-o ConnectTimeout=20'
+        remote_path: '/root'
+     
        
         
 
