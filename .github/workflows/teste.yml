@@ -16,7 +16,7 @@ jobs:
         ssh_private_key: ${{ secrets.SSH_KEY }}
         sftp_only: true  
         sftpArgs: '-o ConnectTimeout=20'
-        remote_path: '/root'
+        remote_path: '/ftp'
      
        
         
