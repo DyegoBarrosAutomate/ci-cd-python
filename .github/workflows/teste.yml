@@ -11,9 +11,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.154.56.41.29
-        username: root
+        username: 'root'
         password: '@Automate2023#'
-        server-dir: root/
+        sftpArgs: '-o ConnectTimeout=5'
+        remote_path: '/root'
 
   
 
