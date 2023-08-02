@@ -6,7 +6,8 @@ jobs:
   print-username:
     runs-on: ubuntu-latest
 
-    steps:    
+    steps:   
+    - uses: actions/checkout@v2
     - name: 📂FILES
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
@@ -15,6 +16,7 @@ jobs:
         password: ${{ secrets.PASSWORD_FTP }}
         ssh_private_key: ${{ secrets.SSH_KEY }}
         sftp_only: true  
+        local_path: './*'
         remote_path: '/root/ftp/'
         sftpArgs: '-o ConnectTimeout=20'
        
